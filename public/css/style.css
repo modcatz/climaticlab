@@ -8,6 +8,7 @@
 
 
 body {
+	position: relative;
 	background: url("../pics/pattern.jpg");
 	font-family: 'helveticalight';
 	color: #2e2e2e;
