@@ -782,6 +782,8 @@ background-color: #dfdfdf;
 	font-size: 25px;
 	font-family: 'helveticalight'; 
 }
+
+
 /*CATALOG*/
 
 
@@ -873,6 +875,74 @@ background-color: #dfdfdf;
 {
 	display: none;
 }
+
+
+/*ORDER FORM*/
+#order-form{
+	position: absolute;
+	z-index: 20;
+	/*margin-top:40px;*/
+
+}
+
+.order-form_input{
+	float: left;
+	padding: 10px;
+	width: 378px;
+	height: 56px;
+	font-family: 'helveticaitalic';
+	text-align: left;
+	font-size: 28px;
+	border: none;
+	outline: none;
+
+
+}
+.order-form_msg{
+	padding: 10px;
+	margin: 40px 100px 20px 100px;
+	width: 780px;
+	height: 160px;
+	font-family: 'helveticaitalic';
+	text-align: left;
+	font-size: 28px;
+	border: 1px solid #dfdfdf;
+	outline: none;
+
+
+
+}
+
+.order-form_submit{
+	margin-left: 750px;
+	margin-bottom: 20px;
+	font-family: 'helveticabold';	
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;	
+	width: 150px;
+	height: 30px;
+	outline: none;
+	border: none;
+	color: white;	
+}
+
+.order-form_submit:hover{
+	cursor: pointer;
+	background-color: #e85452;
+}
+
+.input-wrapper:first-child::after{
+content: "";
+position: absolute;
+right: 50%;
+top: 9px;
+width: 1px;
+height: 60px;
+background-color: #dfdfdf;
+}
+
+
 
 /*PAGINATION*/
 
