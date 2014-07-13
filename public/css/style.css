@@ -880,13 +880,13 @@ background-color: #dfdfdf;
 
 /*ORDER FORM*/
 #order-form{
+	position: fixed;
+	top: 0px;
+	z-index: 20;
 	background-color: #fff;
 	width: 1000px;
 	height: 500px;
 	margin: auto;
-
-	
-
 }
 
 .order-form_input{
@@ -951,16 +951,18 @@ background-color: #dfdfdf;
 }
 .order-popup{
 	display: none;
-	z-index: 20;
+	/*z-index: 20;
+	position:fixed;
+    top:0px;*/
+	
+}
+.order-popup_background{
+	z-index: 1;
 	width:100%;
     min-height:100%;
     background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
     position:fixed;
-    top:0px;
-    
-}
-.order-popup_background{
+    overflow:hidden;
 
 }
 

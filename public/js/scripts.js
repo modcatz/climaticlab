@@ -83,11 +83,11 @@ $("#contact-form").validate({
 
 
 $(".product_order").click(function() {
-$(".order-popup").show();
+$(".js-order").show();
 });
 
-$(".order-popup").click(function() {
-$(this).hide();
+$(".js-close-popup").click(function() {
+$(".js-order").hide();
 });
 
 });

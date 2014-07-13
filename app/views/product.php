@@ -1,7 +1,7 @@
 <?php echo $headerView; ?>
 <body>
-<div class="order-popup">
-<!-- <div class="order-popup_background"></div> -->
+<div class="order-popup js-order">
+<div class="order-popup_background js-close-popup"></div>
 					<form id="order-form" method="post" action="">
 					<div class="order-label">Оставьте данные для связи с вами, мы обязательно перезвоним и предложим наилучшие условия по данному продукту.</div>
 					<div class="input-wrapper">
