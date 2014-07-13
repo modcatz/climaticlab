@@ -880,9 +880,12 @@ background-color: #dfdfdf;
 
 /*ORDER FORM*/
 #order-form{
-	position: absolute;
-	z-index: 20;
-	/*margin-top:40px;*/
+	background-color: #fff;
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+
+	
 
 }
 
@@ -942,8 +945,24 @@ width: 1px;
 height: 60px;
 background-color: #dfdfdf;
 }
+.order-label{
+	padding: 20px 52px 20px 52px ;
 
+}
+.order-popup{
+	display: none;
+	z-index: 20;
+	width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    
+}
+.order-popup_background{
 
+}
 
 /*PAGINATION*/
 

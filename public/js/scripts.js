@@ -80,4 +80,14 @@ $("#contact-form").validate({
        
     });
 
+
+
+$(".product_order").click(function() {
+$(".order-popup").show();
+});
+
+$(".order-popup").click(function() {
+$(this).hide();
+});
+
 });

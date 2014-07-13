@@ -1,5 +1,18 @@
 <?php echo $headerView; ?>
 <body>
+<div class="order-popup">
+<!-- <div class="order-popup_background"></div> -->
+					<form id="order-form" method="post" action="">
+					<div class="order-label">Оставьте данные для связи с вами, мы обязательно перезвоним и предложим наилучшие условия по данному продукту.</div>
+					<div class="input-wrapper">
+					<input class="order-form_input js-uu form-validation placeholder" name="name" type="text" value="Имя" /> 
+					<input class="order-form_input form-validation placeholder" name="email" type="text" value="E-mail"  />
+					</div>
+					<textarea class="order-form_msg form-validation placeholder" name="message" type="text">Ваше сообщение</textarea>
+					<button class="order-form_submit lightred" name="submit">Заказать</button>
+				</form>
+
+			</div>
 <div class="wrapper">
 <header class="header">
 <?php echo $menu; ?>
@@ -35,20 +48,12 @@
 			<div class="product_name article_h2"><?php echo $product->title ?></div>
 			<div class="product_text article_text"><p><?php echo nl2br( $product->description ) ?></p>
 			<button class="product_order">Заказать</button>	
-					<form id="order-form" method="post" action="">
-					<div class="order-label">Оставьте данные для связи с вами, мы обязательно перезвоним и предложим наилучшие условия по данному продукту.</div>
-					<div class="input-wrapper">
-					<input class="order-form_input js-uu form-validation placeholder" name="name" type="text" value="Имя" /> 
-					<input class="order-form_input form-validation placeholder" name="email" type="text" value="E-mail"  />
-					</div>
-					<textarea class="order-form_msg form-validation placeholder" name="message" type="text">Ваше сообщение</textarea>
-					<button class="order-form_submit lightred" name="submit">Заказать</button>
-				</form>
 			</div>
-		</article>
+			</article>
 		
 	</div>
 	
 
 </div>
+
 <?php echo $footer ?>
