@@ -947,9 +947,7 @@ background-color: #dfdfdf;
 .inner-text a:hover {
 	color: #1f5094;
 }
-/*.inner-text a:visited{
-	color: #584295;
-}*/
+
 .inner-text img{
 	max-width: 100%;
 }
