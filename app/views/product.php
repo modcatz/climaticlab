@@ -2,16 +2,20 @@
 <body>
 <div class="order-popup js-order">
 <div class="order-popup_background js-close-popup"></div>
+<div class="order-form-wrapper">
+<div class="order-label">Оставьте данные для связи с вами, мы обязательно перезвоним и предложим наилучшие условия по данному продукту.</div>
+					
 					<form id="order-form" method="post" action="">
-					<div class="order-label">Оставьте данные для связи с вами, мы обязательно перезвоним и предложим наилучшие условия по данному продукту.</div>
-					<div class="input-wrapper">
+					<div class="order-input-wrapper">
 					<input class="order-form_input js-uu form-validation placeholder" name="name" type="text" value="Имя" /> 
 					<input class="order-form_input form-validation placeholder" name="email" type="text" value="E-mail"  />
 					</div>
-					<textarea class="order-form_msg form-validation placeholder" name="message" type="text">Ваше сообщение</textarea>
+					<textarea class="order-form_msg form-validation placeholder" name="message" type="text">Комментарии к заказу</textarea>
 					<button class="order-form_submit lightred" name="submit">Заказать</button>
+					
 				</form>
-
+				<div class="order-form-close js-close-popup">закрыть</div>
+</div>
 			</div>
 <div class="wrapper">
 <header class="header">

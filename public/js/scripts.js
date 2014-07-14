@@ -2,7 +2,9 @@ $(document).ready(function(){
   var input = document.getElementsByClassName('contact-form_input')[0];
   var input1 = document.getElementsByClassName('contact-form_input')[1];
   var input2 = document.getElementsByClassName('contact-form_msg')[0];
-
+  var orderinput = document.getElementsByClassName('order-form_input')[0];
+  var orderinput1 = document.getElementsByClassName('order-form_input')[1];
+  var orderinput2 = document.getElementsByClassName('order-form_msg')[0];
 
 
  function prepareInput(input) {
@@ -58,6 +60,48 @@ input2.onfocus = function() {
   }
  };
 
+ //order form
+ if (orderinput) { 
+orderinput.onfocus = function() {
+    if (orderinput.classList.contains('placeholder')) {
+      prepareInput(this);
+  };
+ 
+  }
+  orderinput.onblur = function() {
+    if (this.value == '') {
+      resetInput(this);
+    }
+  }
+
+// mail
+
+   orderinput1.onfocus = function() {
+    if (orderinput1.classList.contains('placeholder')) {
+      prepareInput(this);
+  };
+  
+  }
+  orderinput1.onblur = function() {
+    if (this.value == '') {
+      resetInput(this);
+    }
+  }
+
+orderinput2.onfocus = function() {
+    if (orderinput2.classList.contains('placeholder')) {
+      prepareInput(this);
+  };
+  
+  }
+  orderinput2.onblur = function() {
+    if (this.value == '') {
+      resetInput(this);
+    }
+  }
+ };
+
+
 
 
 
@@ -79,7 +123,24 @@ $("#contact-form").validate({
        }
        
     });
+$("#order-form").validate({
+       rules:{
 
+            name:{
+                required: false,
+                minlength: 1,
+                 },
+            email:{
+              required: true,
+              email: true
+            },
+        message:{
+                required: false,
+                minlength: 0
+                 }         
+       }
+       
+    });
 
 
 $(".product_order").click(function() {
