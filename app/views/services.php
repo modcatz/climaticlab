@@ -5,7 +5,7 @@
 <?php echo $menu; ?>
 
 <ul class="breadcrumbs">
-	<li><a href="<?=$siteUrl?>">Главная</a></li>
+	
 	<li>Услуги</li>
 	
 </ul>

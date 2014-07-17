@@ -151,4 +151,12 @@ $(".js-close-popup").click(function() {
 $(".js-order").hide();
 });
 
+
+$(".product_preview-photo").click(function() {
+ var image_number= $(this).attr("data-image-id");
+ var image_id= document.getElementById (image_number);
+$(".product_main-photo").addClass("hidden");
+image_id.classList.remove('hidden');
+
+});
 });

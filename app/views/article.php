@@ -19,9 +19,9 @@
 	}
 ?>
 <ul class="breadcrumbs">
-	<li><a href="<?=$siteUrl?>/">Главная</a></li>
+	
 	<?php if( $bc_page ) {?> <li><a href="<?=$siteUrl . '/' . $page?>"><?=$bc_page?></a></li><?php } ?>
-	<?php if( $page != 'objects' ) { ?><li><?php echo $article->title; } ?></li>
+	<?php  ?><li><?php echo $article->title;  ?></li>
 	
 </ul>
 </header>
