@@ -3,8 +3,7 @@
 <div class="wrapper">
 <header class="header">
 <?php echo $menu; ?>
-<ul class="breadcrumbs">
-	<li><a href="<?=$siteUrl?>">Главная</a></li>
+<ul class="breadcrumbs">	
 	<li>Обратная связь</li>	
 </ul>
 </header>

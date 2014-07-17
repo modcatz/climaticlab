@@ -32,7 +32,7 @@
 		<div class="product_photo-full">
 			<?php for( $i = 0; $i < count( $images ); $i++ )
 			{ ?>			
-					<img class="product_main-photo<?php if( $i != 0 ){ echo ' hidden"'; } else { echo '"'; } ?>" src="<?=$siteUrl?><?php echo ( $images[$i]['image'] ) ? '/images/products/full/' . $images[$i]['image'] : '/pics/category.png' ?>" alt="product" />			
+					<img class="product_main-photo<?php if( $i != 0 ){ echo ' hidden'; }?>" id="catalog-image_<?php echo $i ?>" src="<?=$siteUrl?><?php echo ( $images[$i]['image'] ) ? '/images/products/full/' . $images[$i]['image'] : '/pics/category.png' ?>" alt="product" />			
 			<?php
 			}
 			?>
@@ -41,7 +41,7 @@
 			<?php for( $i = 0; $i < count( $images ); $i++ )
 			{ ?>			
 								
-					<img class="product_preview-photo" src="<?=$siteUrl?><?php echo ( $images[$i]['image'] ) ? '/images/products/thumb/' . $images[$i]['image'] : '/pics/category.png' ?>" alt="<?php if( isset( $images[$i]['title'] ) ) { echo $images[$i]['title']; }?>" />
+					<img class="product_preview-photo" data-image-id="catalog-image_<?php echo $i ?>" src="<?=$siteUrl?><?php echo ( $images[$i]['image'] ) ? '/images/products/thumb/' . $images[$i]['image'] : '/pics/category.png' ?>" alt="<?php if( isset( $images[$i]['title'] ) ) { echo $images[$i]['title']; }?>" />
 		
 			<?php
 			}			

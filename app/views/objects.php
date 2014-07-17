@@ -4,8 +4,7 @@
 <header class="header">
 <?php echo $menu; ?>
 <ul class="breadcrumbs">
-	<li><a href="<?=$siteUrl?>/">Главная</a></li>
-	<li>Наши объекты</li>
+	<li>Наши объектыs</li>
 	
 </ul>
 </header>
@@ -13,9 +12,8 @@
 <div class="article_name mainblue">Наши объекты</div>
 <?php 
 	foreach( $objects as $object )
-	{?>
-		<a href="<?=$siteUrl . '/objects/' . $object->id?>"><?=$object->title;?></a><br />
-	<?php
+	{
+	 	echo '<?=$object->title;?><br />';	
 	}?>
 
 </div>
