@@ -4,7 +4,7 @@
 <header class="header">
 <?php echo $menu; ?>
 <ul class="breadcrumbs">
-	<li>Наши объектыs</li>
+
 	
 </ul>
 </header>

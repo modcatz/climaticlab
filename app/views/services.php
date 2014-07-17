@@ -5,12 +5,10 @@
 <?php echo $menu; ?>
 
 <ul class="breadcrumbs">
-	
-	<li>Услуги</li>
-	
+		
 </ul>
 </header>
-<div class="article_name mainblue">Услуги</div>
+<div class="article_name maingreen">Услуги</div>
 <div class="content services-inner">
 
 

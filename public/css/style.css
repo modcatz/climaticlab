@@ -254,14 +254,14 @@ color: #2e2e2e;
 	height: 100px;
 	background-color: inherit;
 }
-.article_name.mainorange::before{
+/*.article_name.mainorange::before{
 	content: "";
 	position: absolute;
 	left: -50px;
 	width: 50px;
 	height: 100px;
 	background-color: inherit;
-}
+}*/
 .article_name.mainblue::after{
 	content: "";
 	position: absolute;
@@ -272,6 +272,17 @@ color: #2e2e2e;
 	border-style: solid;
 	border-width: 20px 50px 0 0;
 	border-color: #2e4462 transparent transparent transparent;
+}
+.article_name.maingreen::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 50px 0 0;
+	border-color: #074b27 transparent transparent transparent;
 }
 .article_name.mainred::after{
 	content: "";
@@ -288,12 +299,12 @@ color: #2e2e2e;
 	content: "";
 	position: absolute;
 	top: 100%;
-	left: -50px;
+	left: 100%;
 	width: 0px;
 	height: 0px;
 	border-style: solid;
-	border-width: 0 50px 20px 0;
-	border-color: transparent #7d551a transparent transparent;
+	border-width: 20px 50px 0 0;
+	border-color: #7d551a transparent transparent transparent;
 }
 .article_h2 {
 	clear: both;
@@ -753,7 +764,13 @@ height: 100%;
 	height: 30px;
 	outline: none;
 	border: none;
-	color: white;	
+	color: white;
+		-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
 }
 
 .contact-form_submit:hover{
@@ -932,6 +949,11 @@ background-color: #dfdfdf;
 	outline: none;
 	border: none;
 	color: white;	
+		-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .order-form_submit:hover{

@@ -4,12 +4,12 @@
 <header class="header">
 <?php echo $menu; ?>
 <ul class="breadcrumbs">	
-	<li>Обратная связь</li>	
+	
 </ul>
 </header>
 
 <div class="content">
-	<div class="article_name mainblue">Обратная связь</div>
+	<div class="article_name mainorange">Обратная связь</div>
 	<?php
 			if( isset( $report ) )
 			{ ?>

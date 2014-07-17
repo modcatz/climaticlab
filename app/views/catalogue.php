@@ -4,7 +4,7 @@
 <header class="header">
 <?php echo $menu; ?>
 <ul class="breadcrumbs">
-	<li>Каталог оборудования</li> 
+	
 </ul>
 <div class="selectmenu-wrapper">
 			<select class="selectmenu">
